@@ -1,0 +1,130 @@
+/* =================================== */
+
+/*  Footer Styles
+/* =================================== */
+
+.footer-area {
+    background: #0e1424;
+    .single-footer-widget {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.footer {
+
+    &__row {
+        display: flex;
+        @media(max-width: 576px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__map{
+        flex: 0 1 50%;
+    }
+
+    &__content{
+        flex: 0 1 50%;
+        margin-left: 80px;
+        @media(max-width: 576px) {
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__item{
+        flex: 0 1 45%;
+        @media(max-width: 576px) {
+            flex: 0 1 45% !important;
+        }
+    }
+
+    &__address {
+        h4{
+            font-size: 24px;
+            color: $primary-color;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__connect {
+        h4{
+            font-size: 24px;
+            color: $primary-color;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__time {
+        h4{
+            font-size: 24px;
+            color: $primary-color;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__media {
+        h4{
+            font-size: 24px;
+            color: $primary-color;
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 991px) {
+        &__item{
+            flex: 0 1 30%;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.footer-media-block {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+.footer-media {
+    padding-left: 0px;
+    display: flex;
+    li {
+        // color: rgba(167, 146, 129, 0.6);
+        color: #fff;
+        list-style-type: none;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        // border: 1px solid rgba(167, 146, 129, 0.4);
+        border: 1px solid #fff;
+        border-radius: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: ease .3s;
+        &:hover {
+          color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+      &:hover > li{
+        opacity: 0.5;
+      }
+      &:hover > li:hover{
+        opacity: 1;
+      }
+}
